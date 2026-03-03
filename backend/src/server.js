@@ -1,7 +1,7 @@
 import express from 'express';
 import path from 'path';
 import cors from 'cors';
-import { serve } from '/inngest/express';
+import { serve } from 'inngest/express';
 import { clerkMiddleware } from '@clerk/express'
 
 import { ENV } from './libs/env.js';
@@ -9,6 +9,7 @@ import { connectDB } from './libs/db.js';
 import { inngest,functions } from './libs/inngest.js';
 
 import chatRoutes from './routes/chatRoutes.js';
+
 
 const app = express();
 
